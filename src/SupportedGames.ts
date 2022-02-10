@@ -45,7 +45,7 @@ class SupportedGames
 			headers['If-None-Match'] = checksum;
 		}
 
-		axios.get(`https://raw.githubusercontent.com/SofianeLasri/PlayStationDiscord/development/tgames.json?_=${Date.now()}`, {
+		axios.get(`https://raw.githubusercontent.com/SofianeLasri/PlayStationDiscord/legacy-API/games.json?_=${Date.now()}`, {
 			headers
 		})
 		.then((response) => {
@@ -68,7 +68,10 @@ class SupportedGames
 
 	public get(presence: IPresence) : IGame
 	{
-		return this.store.get('consoles.ps4').find((game: IGame) => {
+		log.info('local games.json: ' + this.store.get('consoles.ps3'));
+		this.store.openInEditor();
+
+		return this.store.get('consoles.ps3').find((game: IGame) => {
 			return (game.titleId.toLowerCase() === presence.npTitleId.toLowerCase()) || (game.name.toLowerCase() === presence.titleName.toLowerCase());
 		});
 	}
