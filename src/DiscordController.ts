@@ -7,6 +7,7 @@ import { PlayStationConsole } from './Consoles/PlayStationConsole';
 import appEvent from './Events';
 
 const packageJson = require('../package.json');
+const isDev = process.env.NODE_ENV === 'dev';
 
 interface IDiscordPresenceDefaultDataModel
 {
@@ -45,13 +46,17 @@ export class DiscordController
 		this._running = true;
 
 		discordClient.on('error', (err: any) => {
-			log.error('An error occurred while communicating with Discord', err);
+			if (err == null) {
+				log.error('An error occurred while communicating with Discord. Maybe the application n°' + console.clientId + ' for the ' + console.consoleName + ' has been deleted?');
+			} else {
+				log.error('An error occurred while communicating with Discord', err);
+			}
 
 			dialog.showMessageBox(null, {
 				type: 'error',
 				title: 'PlayStationDiscord Error',
 				message: 'An error occurred while communicating with Discord',
-				detail: 'Please check the log file for additonal information.'
+				detail: 'Maybe the application n°' + console.clientId + ' for the ' + console.consoleName + ' has been deleted? \n\nPlease check the log file for additonal information. \n(Windows) %appdata%\\playstationdiscord\\log.log',
 			});
 
 			appEvent.emit('discord-disconnected', err);
@@ -102,6 +107,9 @@ export class DiscordController
 					}
 				}
 
+				if (isDev) {
+					log.info(data);
+				}
 				discordClient.updatePresence({...this._defaultInfo, ...data});
 				resolve();
 			}

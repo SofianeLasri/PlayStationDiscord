@@ -852,6 +852,7 @@
     "discord-rpc" "github:discordjs/rpc"
 
 "discord-rpc@github:discordjs/rpc":
+  "integrity" "sha512-iv3Wna4f0XvYezCVnST70eoYuxDWVxywH+Om7GuOIjc/byzyG+AEquD938MgKy+ysKh9RZkKR3YqGNMJB44T8w=="
   "resolved" "git+ssh://git@github.com/discordjs/rpc.git#cfddf66c372abe430a284ff3ea885e8cc0477f99"
   "version" "3.1.0"
   dependencies:
@@ -2761,6 +2762,11 @@
   "version" "1.1.2"
   dependencies:
     "string-width" "^1.0.1"
+
+"slugify@^1.6.5":
+  "integrity" "sha512-8mo9bslnBO3tr5PEVFzMPIWwWnipGS0xVbYf65zxDqfNwmzYn1LpiKNrR6DlClusuvo+hDHd1zKpmfAe83NQSQ=="
+  "resolved" "https://registry.npmjs.org/slugify/-/slugify-1.6.5.tgz"
+  "version" "1.6.5"
 
 "source-map-support@^0.5.16":
   "integrity" "sha512-efyLRJDr68D9hBBNIPWFjhpFzURh+KJykQwvMyW5UiZzYwoF6l4YMMDIJJEyFWxWCqfyxLzz6tSfUFR+kXXsVQ=="

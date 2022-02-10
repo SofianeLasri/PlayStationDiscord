@@ -4,7 +4,7 @@ export default class PlayStation3 extends PlayStationConsole
 {
 	public constructor()
 	{
-		super(PlayStationConsoleType.PS3, '830360909515980810'); // Bot SL-Projects
+		super(PlayStationConsoleType.PS3, '941407509426606090'); // Bot remplacé par le miens
 	}
 
 	public get assetName() : string

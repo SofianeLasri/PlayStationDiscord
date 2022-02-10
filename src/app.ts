@@ -28,6 +28,8 @@ const sonyLoginUrl : string = 'https://id.sonyentertainmentnetwork.com/signin/?s
 
 const logoIcon = nativeImage.createFromPath(path.join(__dirname, '../assets/images/logo.png'));
 
+const slugify = require('slugify');
+
 // Mac (#41)
 const trayLogoIcon = nativeImage.createFromPath(path.join(__dirname, '../assets/images/trayLogo.png'));
 
@@ -632,7 +634,7 @@ ipcMain.on('update-install', () => {
 });
 
 ipcMain.on('show-notes', () => {
-	shell.openExternal('https://github.com/Tustin/PlayStationDiscord/releases/latest');
+	shell.openExternal('https://github.com/SofianeLasri/PlayStationDiscord/releases/latest');
 });
 
 ipcMain.on('mac-download', () => {
