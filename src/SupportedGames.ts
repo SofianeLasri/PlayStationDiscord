@@ -45,7 +45,7 @@ class SupportedGames
 			headers['If-None-Match'] = checksum;
 		}
 
-		axios.get(`https://raw.githubusercontent.com/SofianeLasri/PlayStationDiscord/legacy-API/games.json?_=${Date.now()}`, {
+		axios.get(`https://raw.githubusercontent.com/SofianeLasri/PlayStationDiscord/developpement/games.json?_=${Date.now()}`, {
 			headers
 		})
 		.then((response) => {
