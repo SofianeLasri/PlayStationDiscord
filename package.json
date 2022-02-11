@@ -1,6 +1,6 @@
 {
   "name": "playstationdiscord",
-  "version": "3.1.3",
+  "version": "3.1.3-snapshot.1",
   "description": "Discord Rich Presence for PlayStation consoles.",
   "main": "./dist/app.js",
   "build": {
@@ -85,8 +85,7 @@
     "electron-updater": "^4.0.6",
     "normalize.css": "^8.0.1",
     "progress-stream": "^2.0.0",
-    "query-string": "^6.2.0",
-    "slugify": "^1.6.5"
+    "query-string": "^6.2.0"
   },
   "devDependencies": {
     "@types/electron-store": "^1.3.0",

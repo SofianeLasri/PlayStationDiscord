@@ -28,8 +28,6 @@ const sonyLoginUrl : string = 'https://id.sonyentertainmentnetwork.com/signin/?s
 
 const logoIcon = nativeImage.createFromPath(path.join(__dirname, '../assets/images/logo.png'));
 
-const slugify = require('slugify');
-
 // Mac (#41)
 const trayLogoIcon = nativeImage.createFromPath(path.join(__dirname, '../assets/images/trayLogo.png'));
 

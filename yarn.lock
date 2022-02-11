@@ -2763,11 +2763,6 @@
   dependencies:
     "string-width" "^1.0.1"
 
-"slugify@^1.6.5":
-  "integrity" "sha512-8mo9bslnBO3tr5PEVFzMPIWwWnipGS0xVbYf65zxDqfNwmzYn1LpiKNrR6DlClusuvo+hDHd1zKpmfAe83NQSQ=="
-  "resolved" "https://registry.npmjs.org/slugify/-/slugify-1.6.5.tgz"
-  "version" "1.6.5"
-
 "source-map-support@^0.5.16":
   "integrity" "sha512-efyLRJDr68D9hBBNIPWFjhpFzURh+KJykQwvMyW5UiZzYwoF6l4YMMDIJJEyFWxWCqfyxLzz6tSfUFR+kXXsVQ=="
   "resolved" "https://registry.npmjs.org/source-map-support/-/source-map-support-0.5.16.tgz"
