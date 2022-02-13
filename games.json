@@ -1,7 +1,13 @@
 {
-    "ps3": [{
-        "name": "Gran Turismo 5",
-        "titleId": "BCES00569_00"
-      }],
-    "vita": []
-  }
+  "ps3": [{
+      "name": "Gran Turismo 5",
+      "titleId": "BCES00569_00"
+    },{
+      "name": "Skate 3",
+      "titleId": "BLES00760_00"
+    },{
+      "name": "Need for Speed™ The Run",
+      "titleId": "BLES01298_00"
+    }],
+  "vita": []
+}
