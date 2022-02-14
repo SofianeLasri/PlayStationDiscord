@@ -1,13 +1,43 @@
 {
   "ps3": [{
+      "name": "LittleBigPlanet™",
+      "titleId": "BCES00141_00"
+    },{
+      "name": "Far Cry® 2",
+      "titleId": "BLES00324_00"
+    },{
+      "name": "Midnight Club: Los Angeles",
+      "titleId": "BLES00362_00"
+    },{
+      "name": "Need for Speed™ Undercover",
+      "titleId": "BLES00450_00"
+    },{
       "name": "Gran Turismo 5",
       "titleId": "BCES00569_00"
     },{
       "name": "Skate 3",
       "titleId": "BLES00760_00"
     },{
+      "name": "RESIDENT EVIL 5 GOLD EDITION",
+      "titleId": "BLES00816_00"
+    },{
+      "name": "Mass Effect™ 2",
+      "titleId": "BLES01133_00"
+    },{
+      "name": "Far Cry® 3",
+      "titleId": "BLES01137_00"
+    },{
       "name": "Need for Speed™ The Run",
       "titleId": "BLES01298_00"
+    },{
+      "name": "Mass Effect™ 3",
+      "titleId": "BLES01462_00"
+    },{
+      "name": "Grand Theft Auto V",
+      "titleId": "BLES01807_00"
+    },{
+      "name": "WATCH_DOGS™",
+      "titleId": "BLES01854_00"
     }],
   "vita": []
 }
